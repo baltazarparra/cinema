@@ -4,24 +4,26 @@ import Movies from './movies';
 import Actors from './actors';
 import PropTypes from 'prop-types';
 
-const AppContent = ({movieTitle, movieDescription, budget, actorsArr}) => (
+const AppContent = ({movieInfo, actorsArr, getValue, getActors, getMovies}) => (
     <main className='container'>
-        <Search />
+        <Search getValue={getValue}/>
         <section className='content'>
-            <Movies
-                movieTitle={movieTitle}
-                movieDescription={movieDescription}
-                budget={budget} />
-            <Actors actorsArr={actorsArr}/>
+            {!!movieInfo && <Movies
+                movieInfo={movieInfo}
+                getActors={getActors}/>}
+            {!!actorsArr && <Actors
+                actorsArr={actorsArr}
+                getMovies={getMovies}/>}
         </section>
     </main>
 )
 
 AppContent.propTypes = {
-    movieTitle: PropTypes.string.isRequired,
-    movieDescription: PropTypes.string.isRequired,
-    budget: PropTypes.string.isRequired,
-    actorsArr: PropTypes.array.isRequired
+    movieInfo: PropTypes.array,
+    actorsArr: PropTypes.array.isRequired,
+    getValue: PropTypes.func.isRequired,
+    getActors: PropTypes.func.isRequired,
+    getMovies: PropTypes.func.isRequired
 }
 
 export default AppContent

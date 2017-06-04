@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Movies = ({movieTitle, movieDescription, budget}) => (
+const Movies = ({movieInfo, getActors}) => (
     <article className='movies'>
-        <div className='card'>
-            <h2>{movieTitle}</h2>
-            <p>{movieDescription}</p>
-            <span>{budget}</span>
-        </div>
+        {movieInfo.map((movie, index) => (
+            <div className='card' key={index}>
+                <h2>{movie.movieTitle}</h2>
+                <p>{movie.movieDescription}</p>
+                <button onClick={getActors} name={movie.id}>Principais Atores</button>
+                {!!movie.budget && <span>Nota: {movie.budget}</span>}
+            </div>
+        ))}
     </article>
 )
 
 Movies.propTypes = {
-    movieTitle: PropTypes.string.isRequired,
-    movieDescription: PropTypes.string.isRequired,
-    budget: PropTypes.string.isRequired
+    movieInfo: PropTypes.array
 }
 
 export default Movies

@@ -43,7 +43,11 @@ input:focus {
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
-    }    
+    }
+}
+
+article {
+    flex: 1;
 }
 
 .card {
@@ -63,15 +67,24 @@ span {
 
 ul {
     display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
 }
 
 li {
     list-style: none;
+    flex: 1;
+}
+
+li p {
+    text-align: left;
+    font-size: 12px;
+    margin: 0 0 20px 0;
 }
 
 img {
-    max-width: 100px;
-    margin: 8px;
+    max-width: 80px;
+    margin: 4px;
 }
 
 @media (max-width: 768px) {
@@ -82,4 +95,11 @@ img {
     li p {
         font-size: 10px;
     }
+}
+
+button {
+    display: block;
+    margin: 20px 0;
+    padding: 4px 8px;
+    font-size: 12px;
 }
