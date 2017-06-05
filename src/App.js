@@ -55,6 +55,7 @@ class App extends Component {
                 })
                 console.log(actors)
                 this.setState({
+                    movieInfo: [],
                     actorsArr:
                     actors.map((actor) => {
                         return {

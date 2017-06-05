@@ -1,26 +1,20 @@
 main {
     width: 768px;
-    margin: 0 auto;
     max-width: 100%;
-    padding: 12px 6px;
-}
-
-@media (max-width: 768px) {
-    main {
-        width: 300px;
-    }
+    margin: 0 auto;
 }
 
 label {
     display: block;
+    padding: 20px;
 }
 
 input {
   font-size: 14px;
+  margin-top: 20px;
+  padding: 6px 12px;
   vertical-align: top;
-  padding: 10px 6px;
   width: 100%;
-  margin-top: 12px;
   border: 0;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
@@ -38,6 +32,7 @@ input:focus {
 
 .content {
     display: flex;
+    padding: 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -47,11 +42,9 @@ input:focus {
 }
 
 article {
-    flex: 1;
 }
 
 .card {
-    padding: 6px;
 }
 
 p {
@@ -67,8 +60,8 @@ span {
 
 ul {
     display: flex;
-    max-width: 300px;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 li {
@@ -79,18 +72,15 @@ li {
 li p {
     text-align: left;
     font-size: 12px;
-    margin: 0 0 20px 0;
 }
 
 img {
-    max-width: 80px;
-    margin: 4px;
+    width: 180px;
 }
 
 @media (max-width: 768px) {
     img {
-        max-width: 60px;
-        margin: 8px;
+        width: 80px;
     }
     li p {
         font-size: 10px;
@@ -99,7 +89,12 @@ img {
 
 button {
     display: block;
+    font-size: 16px;
+    padding: 8px 16px;
     margin: 20px 0;
-    padding: 4px 8px;
+}
+
+.filmes {
     font-size: 12px;
+    padding: 6px 12px;
 }

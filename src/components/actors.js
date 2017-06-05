@@ -8,7 +8,7 @@ const Actors = ({actorsArr, getMovies}) => (
             <li key={index}>
                 <img src={actor.src} alt={actor.name} />
                 <p>{actor.name}</p>
-                <button onClick={getMovies} name={actor.id}>Filmografia</button>
+                <button className='filmes' onClick={getMovies} name={actor.id}>Filmes</button>
             </li>
         ))}
     </ul>

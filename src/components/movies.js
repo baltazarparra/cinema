@@ -7,7 +7,7 @@ const Movies = ({movieInfo, getActors}) => (
             <div className='card' key={index}>
                 <h2>{movie.movieTitle}</h2>
                 <p>{movie.movieDescription}</p>
-                <button onClick={getActors} name={movie.id}>Principais Atores</button>
+                <button onClick={getActors} name={movie.id}>Principais atores</button>
                 {!!movie.budget && <span>Nota: {movie.budget}</span>}
             </div>
         ))}
