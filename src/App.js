@@ -31,7 +31,7 @@ class App extends Component {
                                     movieDescription: item.overview,
                                     budget: item.vote_average,
                                     id: item.id,
-                                    bg: `http://image.tmdb.org/t/p/w342/${item.poster_path}`
+                                    bg: `https://image.tmdb.org/t/p/w342/${item.poster_path}`
                                 }
                             })
                         })
@@ -83,7 +83,7 @@ class App extends Component {
                             movieDescription: item.overview,
                             budget: item.vote_average,
                             id: item.id,
-                            bg: `http://image.tmdb.org/t/p/w342/${item.poster_path}`
+                            bg: `https://image.tmdb.org/t/p/w342/${item.poster_path}`
                         }
                     })
                 })
