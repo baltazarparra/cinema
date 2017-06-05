@@ -30,7 +30,8 @@ class App extends Component {
                                     movieTitle: item.title,
                                     movieDescription: item.overview,
                                     budget: item.vote_average,
-                                    id: item.id
+                                    id: item.id,
+                                    bg: `http://image.tmdb.org/t/p/w342/${item.poster_path}`
                                 }
                             })
                         })
@@ -81,7 +82,8 @@ class App extends Component {
                             movieTitle: item.title,
                             movieDescription: item.overview,
                             budget: item.vote_average,
-                            id: item.id
+                            id: item.id,
+                            bg: `http://image.tmdb.org/t/p/w342/${item.poster_path}`
                         }
                     })
                 })

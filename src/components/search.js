@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 const Search = ({getValue}) => (
     <div className='search'>
         <label>
-          Digite o nome do filme
+          <span>Digite o nome do filme</span>
           <input
             type='search'
-            placeholder='Ex. Sobre meninos e lobos'
+            placeholder='Ex. Doutor Estranho'
             onClick={getValue}
           />
         </label>

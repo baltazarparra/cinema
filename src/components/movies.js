@@ -6,7 +6,12 @@ const Movies = ({movieInfo, getActors}) => (
         {movieInfo.map((movie, index) => (
             <div className='card' key={index}>
                 <h2>{movie.movieTitle}</h2>
-                <p>{movie.movieDescription}</p>
+                <section>
+                    <picture>
+                        <img src={movie.bg} alt={movie.movieTitle} />
+                    </picture>
+                    <p>{movie.movieDescription}</p>
+                </section>
                 <button onClick={getActors} name={movie.id}>Principais atores</button>
                 {!!movie.budget && <span>Nota: {movie.budget}</span>}
             </div>
