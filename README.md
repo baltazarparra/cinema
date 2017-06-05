@@ -1,13 +1,16 @@
 # cinema
-Estudando PWA com React.
+Estudando React/PWA.
 
-## install
+## install yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 sudo apt-get update && sudo apt-get install yarn
 
-https://yarnpkg.com/pt-BR/
+- docs
+  https://yarnpkg.com/pt-BR/
+
+## run dependencies
 
 npm i
 
